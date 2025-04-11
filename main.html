@@ -39,7 +39,7 @@
             </div>
 
             <div class="row mb-3">
-                <div class="col-md-4">
+                <div class="col-md-6">
                     <label for="college-input" class="form-label">College</label>
                     <input type="text" class="form-control" id="college-input" required>
                     <div class="invalid-feedback">
@@ -47,7 +47,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <label for="graduation-year" class="form-label">Graduation Year</label>
                     <select class="form-select" id="graduation-year" required>
                         <option value="">Choose...</option>
@@ -61,7 +61,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-4">
+                <div class="col-md-3">
                     <label for="roll-no-input" class="form-label">Roll No.</label>
                     <input type="text" class="form-control" id="roll-no-input" required>
                     <div class="invalid-feedback">
@@ -81,23 +81,7 @@
             <button type="submit" class="btn btn-primary">Submit form</button>
         </form>
     </div>
-
-    <script>
-        // Bootstrap validation
-        (function () {
-            'use strict'
-            var forms = document.querySelectorAll('.needs-validation')
-            Array.prototype.slice.call(forms).forEach(function (form) {
-                form.addEventListener('submit', function (event) {
-                    if (!form.checkValidity()) {
-                        event.preventDefault()
-                        event.stopPropagation()
-                    }
-                    form.classList.add('was-validated')
-                }, false)
-            })
-        })()
-    </script>
+	<script src="script.js"></script>
 </body>
 
 </html>
